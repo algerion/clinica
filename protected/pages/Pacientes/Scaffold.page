@@ -1,4 +1,4 @@
-<%@ MasterClass="Application.layouts.MainLayout" Title="Modificar producto" %>
+<%@ MasterClass="Application.layouts.MainLayout" Title="Datos de pacientes" %>
 <com:TContent ID="Main">
 	<div align="center">
 		<table border="0">
