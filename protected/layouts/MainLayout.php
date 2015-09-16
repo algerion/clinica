@@ -27,9 +27,9 @@ class MainLayout extends TTemplateControl
 			$this->pnlEncabezado->Visible = false;
 			if($this->Request["popup"] == "1")
 				$this->pnlCerrar->Visible = true;
-			else
+			else*/
 				$this->pnlCerrar->Visible = false;
-		}
+/*		}
 		else
 		{
 			$this->pnlCerrar->Visible = false;
