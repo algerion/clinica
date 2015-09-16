@@ -21,12 +21,13 @@ USE `clinica`;
 DROP TABLE IF EXISTS `pacientes`;
 
 CREATE TABLE `pacientes` (
-  `id_paciente` INT(11) NOT NULL AUTO_INCREMENT,
-  `nombre` VARCHAR(500) DEFAULT NULL,
-  `tel_casa` VARCHAR(20) DEFAULT NULL,
-  `movil` VARCHAR(20) DEFAULT NULL,
+  `id_paciente` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(500) DEFAULT NULL,
+  `tel_casa` varchar(20) DEFAULT NULL,
+  `movil` varchar(20) DEFAULT NULL,
+  `whatsapp` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`id_paciente`)
-) ENGINE=INNODB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `pacientes` */
 
@@ -34,7 +35,3 @@ CREATE TABLE `pacientes` (
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
 /*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
-CREATE USER 'clinica'@'%' IDENTIFIED BY 'clinica';
-GRANT ALL PRIVILEGES ON clinica.* TO 'clinica'@'%';
-FLUSH PRIVILEGES;

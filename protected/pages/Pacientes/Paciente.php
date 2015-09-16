@@ -9,5 +9,6 @@ class Paciente extends TActiveRecord
     public $nombre;
 	public $tel_casa;
 	public $movil;
+	public $whatsapp;
 }
 ?>
