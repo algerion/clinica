@@ -13,8 +13,8 @@ class MainLayout extends TTemplateControl
 		parent::onInit($param);
 		
 //		if($this->User->IsGuest)
-			$this->mnuPrincipal->Visible = false;
-/*		else
+//			$this->mnuPrincipal->Visible = false;
+//		else
 			$this->mnuPrincipal->Visible = true;
 /*
 		echo $this->User->Name;
@@ -30,7 +30,7 @@ class MainLayout extends TTemplateControl
 			else*/
 				$this->pnlCerrar->Visible = false;
 /*		}
-		else
+		else*/
 		{
 			$this->pnlCerrar->Visible = false;
 			$doc = new TXmlDocument();
@@ -38,7 +38,6 @@ class MainLayout extends TTemplateControl
 			$x = $doc->getElements();
 			$this->creaMenuXml($x, $this->mnuPrincipal);
 		}
-*/
 	}
 
 	public function creaMenuXml($xml, $padre)

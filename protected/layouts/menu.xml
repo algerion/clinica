@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Menu ID="mnuPrincipal">
+	<!-- MenuItem ID="smHome" Title="Inicio" Url="index.php?page=Home" Description="Inicio" / -->
+	<MenuItem ID="smCitas" Title="Citas">
+		<MenuItem ID="smCitaAgendar" Title="Agendar" Url="index.php?page=Citas.Agendar" Description="Agendar" />
+	</MenuItem>
+	<MenuItem ID="smDirectorio" Title="Directorio">
+		<MenuItem ID="smDirPacientes" Title="Pacientes" Url="index.php?page=Pacientes.Scaffold" Description="Pacientes" />
+		<MenuItem ID="smDirMedicos" Title="Médicos" Url="index.php?page=Medicos.Scaffold" Description="Médicos" />
+	</MenuItem>
+	<!-- MenuItem ID="smSalir" Title="Salir" Url="index.php?page=Usuarios.Login&amp;action=Salir" / -->
+</Menu>
